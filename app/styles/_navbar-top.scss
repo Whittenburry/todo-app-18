@@ -32,38 +32,3 @@
     padding: $gutter;
   }
 }
-
-.navbar-bottom {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar-list {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-
-  margin: 0;
-
-  overflow: auto;
-
-  &__item {
-    min-width: 30%;
-
-    padding: 0 $gutter;
-
-    text-align: center;
-  }
-}
-
-.add-new-item {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  width: 15%;
-
-  margin: 0;
-
-  background: $placeholder-text;
-  font-size: 1rem;
-}
