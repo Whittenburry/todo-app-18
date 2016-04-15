@@ -17,7 +17,15 @@
 
     padding: 0 $gutter;
 
+    border-bottom: 0.2rem solid transparent;
+
+    color: $title-white;
     text-align: center;
+
+    &:hover {
+      border-bottom: $list-border;
+      background: $placeholder-text;
+    }
   }
 }
 
@@ -29,6 +37,14 @@
 
   margin: 0;
 
-  background: $placeholder-text;
+  border-bottom: 0.2rem solid transparent;
+  border-radius: 2.5%;
+
   font-size: 1rem;
+
+  &:hover {
+    border-bottom: $list-border;
+    background: $placeholder-text;
+    cursor: pointer;
+  }
 }
