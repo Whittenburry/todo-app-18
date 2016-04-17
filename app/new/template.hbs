@@ -56,4 +56,12 @@
 </ul>
 {{#link-to "new" class="add-new-item"}}Add New List{{/link-to}}
 
+<div class="new-list-container">
+  <h3 class="add-new-list">Add New List</h3>
+  <form class="new-list-form">
+    {{input type="text" class="new-list-form__input" placeholder="List Name"}}
+    <button class="new-list-form__button">Accept</button>
+  </form>
+</div>
+
 {{outlet}}
