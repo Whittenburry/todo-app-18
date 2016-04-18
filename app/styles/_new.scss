@@ -1,0 +1,51 @@
+.new-outer-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.new-list-container {
+  width: $max-content-width;
+
+  margin-top: $gutter;
+}
+
+.add-new-list {
+  margin: 0 0 $gutter / 2.5;
+}
+
+.new-list-form {
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: $brand-shadow;
+
+  &__input {
+    margin: $gutter $gutter * 1.2 0;
+    padding-top: $gutter;
+    padding-bottom: $gutter / 3;
+
+    border-bottom: $input-border;
+
+    outline: none;
+    color: $brand-blue;
+  }
+
+  &__button {
+    align-self: flex-end;
+
+    margin-right: $gutter / 2;
+    padding: $gutter;
+    padding-bottom: $gutter * 1.5;
+
+    outline: none;
+    background: transparent;
+    color: $brand-blue;
+
+    font-size: 0.6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

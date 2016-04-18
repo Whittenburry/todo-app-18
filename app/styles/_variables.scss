@@ -3,7 +3,11 @@ $brand-yellow: #ffff8c;
 $title-white: #fff;
 
 $gutter: 1rem;
+$max-content-width: 60%;
 $list-border: 0.2rem solid $brand-yellow;
+$brand-shadow: 0.3rem 0.3rem 2.5rem #555;
 
 $regular-text: #1c1c1c;
 $placeholder-text: rgba(0, 0, 0, 0.38);
+
+$input-border: 0.1rem solid lighten($placeholder-text, 70%);
