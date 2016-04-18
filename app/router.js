@@ -7,8 +7,11 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('lists');
-  this.route('new');
-  this.route('list-view');
+
+  this.route('dashboard', { path: '/' }, function() {
+    this.route('new');
+    this.route('list-view');
+  });
 });
 
 export default Router;
