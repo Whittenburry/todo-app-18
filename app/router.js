@@ -10,7 +10,7 @@ Router.map(function() {
 
   this.route('dashboard', { path: '/' }, function() {
     this.route('new');
-    this.route('list-view');
+    this.route('list-view', { path: '/:list_id' });
   });
 });
 
