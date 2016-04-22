@@ -17,4 +17,11 @@ export default Ember.Controller.extend({
       });
     });
   },
+
+  destroyTask(task) {
+    if (window.confirm(`Are you sure you want to destroy this task?`)) {
+      task.destroyRecord();
+      this.transitionToRoute(`dashboard`);
+    }
+  },
 });
