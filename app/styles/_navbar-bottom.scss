@@ -29,7 +29,7 @@
     color: $title-white;
     text-align: center;
 
-    &:hover {
+    &.active {
       border-bottom: $list-border;
       background: $placeholder-text;
     }
@@ -55,10 +55,12 @@
   text-shadow: 1px 2px darken($brand-blue, 15%);
 
   &:hover {
+    cursor: pointer;
+  }
+
+  &.active {
     border-bottom: $list-border;
     background: $placeholder-text;
-
-    cursor: pointer;
   }
 }
 

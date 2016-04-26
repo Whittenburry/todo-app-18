@@ -24,4 +24,9 @@ export default Ember.Controller.extend({
       this.transitionToRoute(`dashboard`);
     }
   },
+
+  markTaskDone(reminder) {
+    reminder.toggleProperty(`done`);
+    reminder.save();
+  },
 });

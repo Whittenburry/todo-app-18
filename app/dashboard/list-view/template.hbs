@@ -10,7 +10,7 @@
         {{#each model.reminders as |reminder|}}
 
           <li class="check-list__box">
-            {{input type="checkbox" class="check-list__input"}} {{reminder.name}}
+            {{input type="checkbox" checked=reminder.done class="check-list__input" change=(action markTaskDone reminder) }} {{reminder.name}}
           </li>
 
         {{/each}}
