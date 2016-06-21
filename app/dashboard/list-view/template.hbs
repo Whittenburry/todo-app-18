@@ -2,7 +2,7 @@
   <div class="list-view-fields">
     <div class="destroy-task">
       <h3 class="list-view-title">{{model.title}}</h3>
-      <button {{action destroyTask model on="click"}} class="destroy-task__x fa fa-times"></button>
+      <button class="destroy-task__x fa fa-times" {{action destroyList model}}></button>
     </div>
     <div class="list-view-details">
       <ul class="check-list">

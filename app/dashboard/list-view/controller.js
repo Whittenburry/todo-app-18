@@ -18,9 +18,9 @@ export default Ember.Controller.extend({
     });
   },
 
-  destroyTask(task) {
-    if (window.confirm(`Are you sure you want to destroy this task?`)) {
-      task.destroyRecord();
+  destroyList(list) {
+    if (window.confirm(`Are you sure you want to destroy this list?`)) {
+      list.destroyRecord();
       this.transitionToRoute(`dashboard`);
     }
   },
