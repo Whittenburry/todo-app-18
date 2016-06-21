@@ -44,12 +44,10 @@
 
   margin: 0;
 
-  // border-top: 0.1rem solid darken($brand-blue, 2%);
-  border-bottom: 0.2rem solid darken($brand-blue, 2%);
-  // border-left: 0.1rem solid darken($brand-blue, 2%);
   border-radius: 1.25%;
 
   color: $title-white;
+  background: $brand-blue;
 
   font-size: 1rem;
   text-shadow: 1px 2px darken($brand-blue, 15%);
