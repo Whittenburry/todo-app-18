@@ -11,7 +11,7 @@
     "build": "ember build",
     "start": "ember server",
     "test": "ember test",
-    "deploy": "ember build -e production && surge dist TodoList-whittenburry.surge.sh"
+    "deploy": "ember build -e production && surge dist todo-whittenburry.surge.sh"
   },
   "repository": "",
   "engines": {
