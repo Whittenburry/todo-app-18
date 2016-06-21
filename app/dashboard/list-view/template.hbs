@@ -1,0 +1,29 @@
+<div class="list-view-container">
+  <div class="list-view-fields">
+    <div class="destroy-task">
+      <h3 class="list-view-title">{{model.title}}</h3>
+      <button class="destroy-task__x fa fa-times" {{action destroyList model}}></button>
+    </div>
+    <div class="list-view-details">
+      <ul class="check-list">
+
+        {{#each model.reminders as |reminder|}}
+
+          <li class="check-list__box">
+            {{input type="checkbox" checked=reminder.done class="check-list__input" change=(action markTaskDone reminder) }} {{reminder.name}}
+          </li>
+
+        {{/each}}
+
+      </ul>
+
+
+      <form class="add-new-task" {{action addTask model newReminder on="submit"}}>
+        {{input class="add-new-task__input" type="text" value=newReminder.name placeholder="What do you want to do?"}}
+        <button class="add-new-task__button">ACCEPT</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{{outlet}}

@@ -1,0 +1,99 @@
+.destroy-task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__x {
+    align-self: center;
+
+    outline: none;
+    background: transparent;
+    color: $destory-red;
+
+    &:hover {
+      text-shadow: 1px 2px darken($destory-red, 15%);
+      cursor: pointer;
+    }
+  }
+}
+
+.list-view-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.list-view-details {
+  box-shadow: $brand-shadow;
+
+}
+
+.list-view-fields {
+  display: flex;
+  flex-direction: column;
+
+  width: $max-content-width;
+
+  margin-top: $gutter;
+
+}
+
+.list-view-title {
+  margin: 0 0 $gutter / 2.5;
+}
+
+.check-list {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: $gutter / 5 $gutter 0;
+  }
+
+  &__input {
+    margin: 0 $gutter / 2 0 0;
+  }
+
+  &__title {
+    margin: 0;
+  }
+}
+
+.add-new-task {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: $gutter;
+
+  &__input {
+    flex-grow: 1;
+
+    margin: 0 0 0 $gutter;
+    padding: $gutter / 2 0 $gutter / 2.5;
+
+    border-bottom: $input-border;
+
+    outline: none;
+    color: $brand-blue;
+  }
+
+  &__button {
+    margin-right: $gutter / 2;
+
+    outline: none;
+    background: transparent;
+    color: $brand-blue;
+
+    font-size: 0.6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

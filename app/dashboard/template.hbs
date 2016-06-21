@@ -1,0 +1,13 @@
+<nav class="navbar-container">
+  <div class="navbar-bottom">
+    <ul class="navbar-list">
+      {{#each model as |list|}}
+        {{#link-to "dashboard.list-view" list.id class="navbar-list__item" }}
+          {{list.title}}
+        {{/link-to}}
+      {{/each}}
+    </ul>
+    {{#link-to "dashboard.new" class="add-new-item"}}Add New List{{/link-to}}
+  </div>
+</nav>
+{{outlet}}

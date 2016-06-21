@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+
+  font-family: sans-serif;
+
+  font-size: 14px;
+  line-height: 2.14rem;
+}
+
+h1 {
+  font-weight: lighter;
+}
+
+h2 {
+  font-weight: lighter;
+}
+
+h3 {
+  font-weight: lighter;
+}
+
+ul {
+  padding: 0;
+  font-weight: lighter;
+  list-style: none;
+}
+
+button {
+  border: 0;
+}
+
+input {
+  border: 0;
+  text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+   color: lighten($placeholder-text, 20%);
+}
+
+a {
+  text-decoration: none;
+}
+
+link {
+  text-decoration: none;
+}
